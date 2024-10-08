@@ -5,7 +5,7 @@ hitboxes = []
 hasbeenpressed = False
 animation_frame = 0
 animations = loadanimarions("file parh") # load all frame for eatch file format ["filename", [frameimage]
-
+animation = []
 
 
 def main():
@@ -26,6 +26,10 @@ def checkinputs():
         hasbeenpressed = False
         pos2 = pygame.get_pos()
         hitboxes.append(pygame.Rect(pos1, pos2)
+        animation_frame += 1 
+        animation = animations[animation_frame]
+
+        
 
 
     

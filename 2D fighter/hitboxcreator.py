@@ -12,7 +12,7 @@ def main():
 
 
 def checkinputs():
-    keys = pygam.getkeys()
+    keys = pygame.key.get_pressed()
     if 
 
 def display():

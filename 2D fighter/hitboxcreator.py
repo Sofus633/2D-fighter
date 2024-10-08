@@ -28,7 +28,7 @@ def checkinputs():
         hitboxes.append(pygame.Rect(pos1, pos2)
         animation_frame += 1 
         animation = animations[animation_frame]
-
+        
         
 
 
@@ -36,6 +36,7 @@ def checkinputs():
 
 
 def display():
+    screen.blit(screen, animation
     for hitbox in hitboxes:
         pygam.draw.rect()  
 

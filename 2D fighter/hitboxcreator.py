@@ -3,16 +3,22 @@ import pygame
 running = True
 hitboxes = []
 hasbeenpressed = False
+animation_frame = 0
+animations = loadanimarions("file parh") # load all frame for eatch file format ["filename", [frameimage]
+
 
 
 def main():
     while running:
         display()
         checkinputs()
+        
 
 
 def checkinputs():
     keys = pygame.key.get_pressed()
+    if keys[K_e]:
+        
     if pygame.mouse.get_press() and not hasbeenpressed:
         hasbeenpressed = True
         pos1 = pygame.mouse.get_pos()

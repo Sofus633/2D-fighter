@@ -91,7 +91,7 @@ def createjson(animation):
     print("Original Data:")
     print(loaded_data)
 
-    loaded_data[NAME] = animation
+    loaded_data["characteran"][NAME] = animation
 
 
     with open("hitboxes.json", "w") as json_file:
